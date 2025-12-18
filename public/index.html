@@ -1,0 +1,20 @@
+<!DOCTYPE html> 
+ <html lang="en">
+  <head>
+   <meta charset="UTF-8">
+   <meta name="description" content="Site with framework">
+   <meta name="viewport" content="initial-scale=1.0, width=device-width">
+   <title>Interactive site</title>
+  </head>
+   <body>
+     <h1>Hello, World!</h1>
+     <p id="para"></p> 
+      <a href="/docs.html">
+       <button>Docs</button>
+     </a>
+      <p id="para"></p>
+      <script src="http://unpkg.com/hyperscript.org@0.9.14/dist/_hyperscript.min.js"></script>
+       <button _="on click fetch http://baconipsum.com/api/?type=meat-and-filler then put result into para">Click me</button>
+       <button _="on click set rand to Math.random() * 360 transition *background-color to `hsl($rand 100%  90%)` over 250ms">Colors</button>
+     </body>
+</html>
