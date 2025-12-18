@@ -14,7 +14,7 @@ func main() {
 r.GET("/docs.html", func(ctx *fasthttp.RequestCtx) {
   ctx.SendFile("./public/docs.html")
 })
-r.GET("./help.html", func(ctx *fasthttp.RequestCtx) {
+r.GET("/help.html", func(ctx *fasthttp.RequestCtx) {
     ctx.SendFile("./public/help.html")
 })
  fasthttp.ListenAndServe(":8080", r.Handler)
